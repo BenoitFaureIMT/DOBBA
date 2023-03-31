@@ -10,7 +10,7 @@ The mechanics are simple:
 - To switch between images press the arrow keys.
 - To download the annotations press the download button. The annotations will be named image_name.txt.
 - The program will try to load annotations for selected images.
-- The annotation format is the corner vertices of the rectangle in clockwise order starting from the yellow (front) one. (x1,y1,x2,y2,x3,y3,x4,y4)
+- The annotation format is the corner vertices of the rectangle in clockwise order starting from the yellow (front) one. (x1,y1,x2,y2,x3,y3,x4,y4,0,1)
 - To use images place them in the images folder.
 
 Tips:
