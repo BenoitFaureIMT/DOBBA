@@ -1,0 +1,120 @@
+/* Set the height of the html and body elements to 100% */
+html,
+body {
+  height: 99.9%;
+  width: 99.9%;
+  margin: 0; /* Remove the default margin applied by the browser */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+
+  background-color: #252525;
+}
+
+/* Set the height and width of the sidebar */
+.side_bar {
+  box-sizing: border-box;
+
+  height: 100%;
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Style the rectangle div */
+.side_bar_rectangles {
+  height: 70%;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #3B3B3B;
+  margin:4px;
+  overflow-y: scroll !important;
+}
+
+.side_bar_rectangles::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.side_bar_rectangles::-webkit-scrollbar-track {
+  background: #2D2D2D;
+}
+
+/* Handle */
+.side_bar_rectangles::-webkit-scrollbar-thumb {
+  background-color: #4A4A4A;
+  border-radius: 10px;
+  border: 3px solid #2D2D2D;
+}
+
+/* Handle on hover */
+.side_bar_rectangles::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.side_bar_menu {
+  height: 30%;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #3B3B3B;
+  margin: 4px;
+}
+
+.side_bar_menu p {
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  background-color: #3B3B3B;
+}
+
+.sidebar_title {
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image_container {
+  position: relative;
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+}
+
+.image_container canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.point {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+
+.box_button {
+  box-sizing: border-box;
+  padding: 8px 16px;
+
+  width: 100%;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.box_button button:hover {
+  background-color: #3f3f3f;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+
+		<title>DOBBA</title> <!-- Directed Oriented Bounding Box Annotator -->
+	</HEAD>
+
+	<BODY>
+
+		<div class="side_bar">
+
+			<div class="side_bar_menu">
+				<h2 class="sidebar_title">Menu</h2>
+				<button type="button" class="box_button" id="download_button">Download</button>
+				<p>
+					To go back on the creation of a rectangle or placement of a point press <b>a</b><br>
+					To delete a selection press <b>d</b><br><br>
+
+					Remember to download the annotations at every step!
+				</p>
+			</div>
+
+			<div class="side_bar_rectangles" id="side_bar_rectangles">
+				<h2 class="sidebar_title">Bounding Boxes</h2>
+			</div>
+			
+		</div>
+
+		<div class="image_container" id="main_image_container">
+		  <canvas id="main_canvas"></canvas>
+		</div>
+
+		<script type="text/javascript" src="scripts.js"></script>
+		
+	</BODY>
+</HTML>
