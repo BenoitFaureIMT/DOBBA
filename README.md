@@ -1,6 +1,6 @@
 # Directed Oriented Bounding Box Annotation tool
 
-This tool is a simple html/css/js site to annotate with oriented bounded box. It was made to annotate bees and only bees so everything is made with that in mind. Furthermore, as it uses the file system, it needs to be hosted on a server, local or not. The simplest way would be to use the Live Server extension on VSCode or run it from the command line.
+This tool is a simple html/css/js site to annotate directed oriented bounded box. It was made to annotate bees and only bees so everything is made with that in mind. Furthermore, as it uses the file system, it needs to be hosted on a server, local or not. The simplest way would be to use the Live Server extension on VSCode or run it from the command line.
 
 The mechanics are simple:
 - Place 3 points to make a box. The first two point represent the front/top face of the box, while the third point represent the tail of the box.
