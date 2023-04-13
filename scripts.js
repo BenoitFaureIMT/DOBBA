@@ -1,4 +1,5 @@
 //----------------Loading Images----------------
+const annotationsFolder = './annotations/'
 const imagesFolder = './images/';
 const imageExtensions = ['jpg', 'jpeg', 'png', 'gif'];
 const imageFiles = [];
@@ -17,10 +18,11 @@ fetch(imagesFolder)
       const extension = href.split('.').pop();
 
       if (imageExtensions.includes(extension)) {
-        imageFiles.push(href);
+        const src = imagesFolder + href.split("/").pop()
+        imageFiles.push(src);
         
         let image = new Image();
-        image.src = href;
+        image.src = src;
         images.push(image);
       }
     });
@@ -400,7 +402,7 @@ document.getElementById("download_button").addEventListener("click", () => save_
 
 //-----------Loading annotations------------
 function load_annotations(file) {
-  const txtfile = 'annotations/' + file.split('/').pop().split('.')[0] + '.txt';
+  const txtfile = annotationsFolder + file.split('/').pop().split('.')[0] + '.txt';
   return new Promise((resolve, reject) => {
     fetch(txtfile)
       .then(response => {if (response.ok){ return response.text(); } else { resolve(); }})
